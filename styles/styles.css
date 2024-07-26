@@ -35,10 +35,11 @@
 
 /* shared styles */
 .common-button {
+    width: 100px;
     background-color: #E6533C;
     border-radius: 42px;
     border: none;
-    padding: 4px;
+    padding: 4px, 50px;
     color: #FFFFFF;
 
 }
@@ -50,7 +51,7 @@
 .section-primary-text {
     color: #FFFFFF;
     font-size: 3rem;
-     margin: 0px;
+    margin: 0px;
 }
 
 .font-color-secondary {
@@ -101,6 +102,10 @@ nav li a {
     /* font-size: 2rem; */
 }
 
+.bar-icon {
+    display: none;
+}
+
 .header-container {
     padding: 0px 190px;
 }
@@ -141,13 +146,14 @@ nav li a {
     padding: 0px 15px;
     margin: 0px;
 }
+
 .dot {
     height: 40px;
     width: 40px;
     background-color: rgba(230, 83, 60, 1);
     border-radius: 50%;
     display: inline-block;
-  }
+}
 
 .workout {
     background-color: rgba(255, 255, 255, 0.1);
@@ -158,30 +164,31 @@ nav li a {
     bottom: 357px;
     right: 0px;
 }
-.workout-text{
-    font-size:2rem ;
+
+.workout-text {
+    font-size: 2rem;
     margin: 8px;
 }
 
-.tutorial-text{
-    font-size:1.5rem ;
+.tutorial-text {
+    font-size: 1.5rem;
     margin: 8px;
 }
 
-.join-btn{
-    background-color:#E6533C;
+.join-btn {
+    background-color: #E6533C;
     border: #FFFFFF solid 0.5px;
     border-radius: 10px;
     padding: 10px;
     color: #FFFFFF;
-    }
+}
 
-.download-btn{
-background-color: transparent;
-border: #FFFFFF solid 0.5px;
-border-radius: 10px;
-padding: 10px;
-color: #FFFFFF;
+.download-btn {
+    background-color: transparent;
+    border: #FFFFFF solid 0.5px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFFFFF;
 }
 
 
@@ -311,7 +318,7 @@ color: #FFFFFF;
     height: 100%;
 }
 
-.bmi-calculator{
+.bmi-calculator {
     text-align: center;
     margin-top: 88px;
 }
@@ -395,11 +402,12 @@ td {
     height: 100%;
     border-radius: 20px;
 }
+
 /* Social Media */
-.social-media{
-color: #FFFFFF;
-text-align: center;
-margin: 50px;
+.social-media {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 50px;
 }
 
 /* Footer Section */
@@ -436,5 +444,130 @@ margin: 50px;
 .rights {
     text-align: center;
     padding: 35px;
+
+}
+
+/* Media Query */
+
+@media screen and (max-width: 576px) {
+
+    .top {
+        padding: 0px 100px;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .bar-icon {
+        display: inline;
+        color: #FFFFFF;
+    }
+
+    .header-container {
+        padding: 0px 5px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-contents {
+        margin-right: 100px;
+        padding: 0px 100px;
+    }
+
+    .banner-button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .habits {
+        padding: 20px 50px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-primary-text {
+        font-size: 1.5rem;
+    }
+
+    .run {
+        padding: 20px 50px;
+    }
+
+    .run-extra {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+
+    }
+
+    .common-button {
+          padding: 5px 20px;
+    }
+
+    .training {
+        padding: 20px 50px;
+    }
+
+    /* .image-row-1{
+        grid-template-columns: 1fr 1fr 0fr; 
+    }
+
+    .image-row-2{
+        grid-template-columns: 1fr 1fr 0fr; 
+    } */
+
+    .calculator {
+        padding: 20px 50px;
+        grid-template-columns: repeat(1, 1fr);
+        /* justify-items: center; */
+    }
+
+    .our-team {
+        padding: 20px 50px;
+    }
+
+    .team-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        padding: 0px 0px;
+    }
+
+    .footer-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: center; */
+        padding: 0px 50px;
+        gap: 10px;
+    }
+
+    .hr-style {
+        margin: 0px 10px;
+    }
+    .rights{
+        margin: 0px, 0px;
+    }
+}
+
+/* Medium Device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        flex-direction: column;
+    }
 
 }

@@ -17,6 +17,7 @@
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
+
 /* 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 .playwrite-cu-fancy {
@@ -128,12 +129,11 @@ nav li a {
     /* grid-template-columns: repeat(2, 1fr);*/
     gap: 90px;
     position: relative;
-    max-width: 90%;
+
 }
 
 .banner-contents {
     margin: 70px, auto;
-    max-width: 30%;
     /* padding: 70px; */
 }
 
@@ -533,18 +533,31 @@ td {
         padding: 20px 50px;
     }
 
-    /* .image-row-1{
-        grid-template-columns: 1fr 1fr 0fr; 
+    .image-row-1 {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .image-row-2{
-        grid-template-columns: 1fr 1fr 0fr; 
-    } */
+    .image-row-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bmi-calculator {
+        margin-top: 10px;
+    }
+
+    .overlay-text {
+        font-size: 0.5rem;
+    }
 
     .calculator {
         padding: 20px 50px;
         grid-template-columns: repeat(1, 1fr);
+        /* margin: 0px; */
         /* justify-items: center; */
+    }
+
+    .form-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .our-team {
@@ -553,6 +566,14 @@ td {
 
     .team-card-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-text h4 {
+        font-size: 0.5rem;
+    }
+
+    .card-text p {
+        font-size: 0.5rem;
     }
 
     .footer {

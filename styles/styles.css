@@ -128,10 +128,12 @@ nav li a {
     /* grid-template-columns: repeat(2, 1fr);*/
     gap: 90px;
     position: relative;
+    max-width: 90%;
 }
 
 .banner-contents {
     margin: 70px, auto;
+    max-width: 30%;
     /* padding: 70px; */
 }
 
@@ -489,6 +491,7 @@ td {
     }
 
     .banner-contents {
+        font-family: inter-normal;
         /* margin-right: 100px; */
         padding: 0px 50px;
     }

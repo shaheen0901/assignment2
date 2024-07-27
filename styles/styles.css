@@ -484,13 +484,13 @@ td {
     }
 
     .miama-italic {
-        font-size: 2rem;
-        line-height: 0.9;
+        font-size: 1.5rem;
+        line-height: 0.7;
     }
 
     .banner-contents {
-        margin-right: 100px;
-        padding: 0px 100px;
+        /* margin-right: 100px; */
+        padding: 0px 50px;
     }
 
     .banner-button {
